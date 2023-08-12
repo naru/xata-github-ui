@@ -8,12 +8,16 @@ declare module "next-auth" {
   interface Session {
     user?: SessionUser;
   }
-  
+
   interface AuthenticatedSession extends Session {
-    user: SessionUser
+    user: SessionUser;
   }
 }
 
 declare module "next-auth/jwt" {
-  interface JWT extends SessionUser {}
+  interface JWT extends SessionUser {
+    refreshToken: string;
+    accessToken: string;
+    accessTokenExpiresAt: number;
+  }
 }
