@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://test-fgeqma.us-east-1.xata.sh/db/github-ui",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
